@@ -21,16 +21,16 @@ app.get('/', function (req, res) {
 // your first API endpoint...
 app.get('/api/whoami', function (req, res) {
     res.json({
-        ipaddress: req.header('x-forwarded-for').split(',')[0],
+        ipaddress: (req.header("x-forwarded-for")).split(',')[0],
         language: req.headers['accept-language'],
         software: req.headers['user-agent'],
     });
 });
 
 // ! Uncomment this before push
-// listen for requests :)
-// var listener = app.listen(process.env.PORT, function () {
-//   console.log('Your app is listening on port ' + listener.address().port);
-// });
+listen for requests :)
+var listener = app.listen(process.env.PORT, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
 
-app.listen(3000);
+// app.listen(3000);
