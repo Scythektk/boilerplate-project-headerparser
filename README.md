@@ -2,7 +2,7 @@
 
 ## User stories:
 
-    I can get the IP address, preferred languages (from header Accept-Language) and system infos (from header User-Agent) for my device.
+    I can get the IP address, preferred languages (from header Accept-Language) and system info (from header User-Agent) for the device I am using.
 
 ## Example usage:
 
